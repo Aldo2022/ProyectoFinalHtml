@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Html</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <style>body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: justify;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        h1 {
+            text-align: center; 
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        h2 {
+            text-align: center; 
+            font-size: 24px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 100%; 
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        p {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+           
+        }
+
+        .image {
+            float: right;
+            margin: 0 0 20px 20px;
+            max-width: 25%;
+            height: auto;
+        }
+
+        .image2 {
+            float: left;
+            margin: 0 20px 20px 0;
+            max-width: 25%;
+            height: auto;
+        }
+
+        .article {
+            float: left;
+            width: 70%;
+            background-color: #FFF;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #CCC;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+
+        .divI {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .divD {
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+    
+
+</head>
+
+<body>
+    <header>
+        <h1>Lenguajes de Programacion</h1>
+        <nav>
+            <ul>
+                <li><a class="active" href="index.html">Home</a><!--active .- le da un color al menu y identifica donde estoy posecionado-->
+                <li><a href="preferencias.html">Preferencias</a></li>
+                <li><a href="audiovisuales.html">Audiovisuales</a></li>
+                <li><a href="contacto.html">contacto</a></li>
+            </ul>
+        </nav>
+        <h2 style="margin: 15px;">Resumen de los Leguajes de Programacion</h2>
+        <!--Aca defino en la misma linea un margen de 15px-->
+        <hr>
+        <article class="container"><!--Aca Defino la caja principal    class container-->
+
+            <div class="divI">
+
+                <img class="image" src="./assets/img/java.png" alt="java">
+                <p>Java se basa en el principio "write once, run anywhere" (escribe una vez, ejecuta en cualquier
+                    lugar).
+                    Esto significa que el código Java es altamente portátil y puede ejecutarse en múltiples sistemas
+                    operativos sin modificaciones significativas.
+                    Es un lenguaje orientado a objetos, lo que fomenta una programación estructurada y modular.
+                    Java se utiliza en una variedad de aplicaciones, desde aplicaciones móviles (usando Android) hasta
+                    sistemas embebidos y aplicaciones empresariales.
+                </p><br>
+
+            </div>
+
+            <div class="divD">
+                <img class="image2" src="./assets/img/javascript.png" alt="javascript">
+                <p>JavaScript es esencial en el desarrollo web moderno y se usa para crear interacciones dinámicas en
+                    páginas web, como formularios interactivos, animaciones y contenido que se actualiza en tiempo real.
+                    Ha evolucionado a lo largo de los años con la introducción de bibliotecas y marcos de trabajo
+                    populares, como React, Angular y Vue, que facilitan el desarrollo web.
+                    JavaScript se ejecuta en el navegador del usuario, lo que mejora la experiencia del usuario y reduce la
+                    carga del servidor.
+                </p><br>
+
+            </div>
+
+            <div class="divI">
+                <img class="image" src="./assets/img/c++.png" alt="c++">
+                <p>C++ se deriva del lenguaje C y agrega funcionalidades de programación orientada a objetos.
+                    Es un lenguaje de bajo nivel que proporciona un control preciso sobre la memoria, lo que lo hace
+                    adecuado para sistemas operativos, motores de juegos y aplicaciones que requieren un rendimiento
+                    óptimo. A pesar de su complejidad, C++ es ampliamente utilizado en industrias como la aeroespacial y la
+                    robótica.
+                </p><br>
+
+            </div>
+
+            <div class="divD">
+             
+                <img class="image2" src="./assets/img/ruby.png" alt="ruby">
+                <p>Ruby es conocido por su sintaxis elegante y su filosofía de programación "la felicidad del
+                    programador". Ruby on Rails, un marco de trabajo de desarrollo web, se basa en Ruby y ha sido fundamental en la
+                    creación de sitios web populares como Twitter y Airbnb. Ruby fomenta la programación concisa y la legibilidad 
+                    del código, lo que lo hace ideal para proyectos donde la claridad es esencial.
+                </p><br>
+
+            </div>    
+
+
+            <div class="divI">
+                
+                <img class="image" src="./assets/img/python.png" alt="phyton">
+                <p>Python es conocido por su simplicidad y claridad de código, lo que facilita la lectura y escritura de
+                    programas. Tiene una amplia gama de bibliotecas y marcos de trabajo, como NumPy y TensorFlow para el
+                    aprendizaje automático, y Django y Flask para desarrollo web. La comunidad de Python es muy activa y
+                    colaborativa, lo que ha contribuido a su popularidad en campos como la ciencia de datos y
+                    la automatización.
+                </p><br>
+              
+            </div>    
+
+
+            <div class="divD">
+                <img class="image2" src="./assets/img/php.png" alt="php">
+                <p>PHP es un lenguaje de secuencias de comandos del lado del servidor ampliamente utilizado en la
+                    creación de aplicaciones web dinámicas.
+                    Es compatible con una variedad de bases de datos, como MySQL y PostgreSQL, lo que facilita la
+                    gestión de datos en aplicaciones web.
+                    Aunque a menudo se le ha criticado por problemas de seguridad en el pasado, las últimas versiones
+                    han mejorado la seguridad y la eficiencia del lenguaje.
+                </p><br>
+            </div>    
+
+        </article>
+    </header>
+
+    <footer class="footer">
+        <p>Derechos reservados &copy;2023</p>
+    </footer>
+</body>
+
+</html>

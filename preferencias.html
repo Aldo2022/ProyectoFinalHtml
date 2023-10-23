@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>preferencias</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        .nav {
+            
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: darkseagreen;
+           
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        table {
+            font-family: 'Times New Roman', Times, serif;
+            border-collapse: collapse;
+            border: 2px solid rgb(148, 13, 13);
+            letter-spacing: 1px;
+            font-size: 1.5rem;
+            background-color: #FFF;
+        }
+
+        td {
+            border: 1px solid rgb(148, 13, 13);
+            padding: 10px 20px;
+        }
+
+        th {
+            border: 1px solid rgb(148, 13, 13);
+            padding: 10px 20px;
+            background-color: rgb(162, 162, 162);
+        }
+
+        .con {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <h1>Lenguajes de Programacion</h1>
+        <nav>
+            <ul class="nav">
+                <li><a href="index.html">Home</a>
+                <li><a class="active" href="preferencias.html">Preferencias</a></li>
+                <li><a href="audiovisuales.html">Audiovisuales</a></li>
+                <li><a href="contacto.html">contacto</a></li>
+            </ul>
+        </nav>
+        <h2>Ventajas y Desventajas de los Lenguajes de Progreamacion</h2>
+        <hr>
+
+    </header>
+
+    <div class="container">
+        <table>
+            <colgroup>
+                <col style="background-color: rgb(50, 145, 70);" >
+                <col style="background-color: darkseagreen;">
+                <col style="background-color: darkseagreen;">
+               
+            </colgroup>
+            <th></th>
+            <th>VENTAJAS</th>
+            <th>DESVENTAJAS</th>
+
+            <tr>
+                
+                <td>Java</td>
+                <td>
+                    <ul class="con">
+                        <P>Portabilidad</P>
+                        <p>Orientado a objetos</p>
+                        <p>Amplia adopción en empresas</p>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="con">
+                        <p>Verboso y requiere más código</p>
+                        <p>Menos adecuado para desarrollo web ágil</p>
+                        <p>Puede ser menos eficiente que lenguajes más bajos</p>
+                    </ul>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Javascript</td>
+                <td>
+                    <ul class="con">
+                        <p>Ejecución en el navegador del usuario</p>
+                        <p>Amplia comunidad y ecosistema de bibliotecas</p>
+                        <p>Ideal para desarrollo web interactivo</p>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="con">
+                        <p>Diferencias en la interpretación del navegador</p>
+                        <p>Seguridad en el lado del cliente</p>
+                        <p>Algunas limitaciones en el rendimiento</p>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td>C++</td>
+                <td>
+                    <ul class="con">
+                        <p>Control de bajo nivel</p>
+                        <p>Alto rendimiento</p>
+                        <p>Ampliamente utilizado en sistemas y juegos</p>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="con">
+                        <p>Mayor complejidad y verbosidad</p>
+                        <p>Mayor riesgo de errores</p>
+                        <p>Curva de aprendizaje empinada para principiantes</p>
+                    </ul>
+                </td>
+            </tr>    
+
+            <tr>
+                <td>Ruby</td>
+                <td>
+                    <ul class="con">
+                        <p>Sintaxis elegante y legible</p>
+                        <p>Ruby on Rails para desarrollo web rápido</p>
+                        <p>Fomenta la productividad del programador</p>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="con">
+                        <p>No es tan eficiente como lenguajes de bajo nivel</p>
+                        <p>Menos común en aplicaciones de alto rendimiento</p>
+                        <p>Comunidad más pequeña que algunos lenguajes populares</p>
+                    </ul>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Phyton</td>
+                <td>
+                    <ul>
+                        <p>Sintaxis simple y legible</p>
+                        <p>Amplia gama de bibliotecas y marcos de trabajo</p>
+                        <p>Popular en la ciencia de datos y aprendizaje automático</p>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="con">
+                        <p>No es el más eficiente para tareas intensivas de CPU</p>
+                        <p>Limitaciones en aplicaciones móviles</p>
+                        <p>Menos común en desarrollo de sistemas en tiempo real</p>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Php</td>
+                <td>
+                    <ul class="con">
+                        <p>Ampliamente utilizado en desarrollo web </p>
+                        <p>Integración sencilla con bases de datos</p>
+                        <p>Buena para la creación rápida de aplicaciones web</p>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="con">
+                        <p>Problemas de seguridad históricos</p>
+                        <p>Sintaxis no tan elegante como otros lenguajes</p>
+                        <p>No es tan versátil fuera del desarrollo web</p>
+                    </ul>
+                </td>
+            </tr>
+
+
+        </table>
+
+    </div>
+
+    
+    
+    
+
+
+    <footer class="footer">
+        <p>Derechos reservados &copy;2023</p>
+    </footer>
+</body>
+
+</html>
